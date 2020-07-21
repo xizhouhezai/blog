@@ -11,6 +11,7 @@ tagline: 一个技术分享的博客站
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
+bgImage: /timg.jpg
 bgImageStyle: {
   height: '450px'
 }
