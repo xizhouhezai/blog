@@ -1,4 +1,33 @@
 module.exports = {
+  "plugins": {
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": {
+      "theme": ['whiteCat', 'blackCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
+      "clean": false,
+      "modelStyle": {
+        "position": "fixed",
+        "left": "0px",
+        "bottom": "0px",
+        "opacity": "0.9",
+        "zIndex": 99999
+      },
+      "width": 150,
+      "height": 220,
+      "btnStyle": {
+        "left": "130px",
+        "bottom": "40px",
+      },
+      "messageStyle": {
+        "left": "160px",
+        "bottom": "150px",
+      },
+      "messages": {
+        welcome: "欢迎来到西洲何在的博客",
+        home: "心里的花，我想要带你回家。",
+        theme: "好吧，希望你能喜欢我的其他小伙伴。",
+        close: "你知道我喜欢吃什么吗？痴痴地望着你。",
+      }
+    }
+  },
   "title": "西洲何在的博客",
   "description": "西洲何在的博客",
   "dest": "public",
