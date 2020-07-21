@@ -1,15 +1,27 @@
 ---
 home: true
-actionText: Get Started →
-actionLink: /node/
+heroText: 西洲何在的博客
+tagline: 一个技术分享的博客站
+# heroImage: /hero.png
+# heroImageStyle: {
+#   maxWidth: '600px',
+#   width: '100%',
+#   display: block,
+#   margin: '9rem auto 2rem',
+#   background: '#fff',
+#   borderRadius: '1rem',
+# }
+bgImageStyle: {
+  height: '450px'
+}
+isShowTitleInHome: false
+actionText: Guide
+actionLink: /views/other/guide
 features:
-- title: day day up
-  details: 记录每一天的进步, 一分耕耘，一分收获.
-  actionLink: /node/
-- title: 程序员成长指北
-  details: 专注 Node.js 技术栈分享，从 前端 到 Node.js 再到 后端数据库，祝您成为优秀的高级 Node.js 全栈工程师
-- title: koala
-  details: 一个有趣的且乐于分享的人。座右铭：今天未完成的，明天更不会完成。
-footer: MIT Licensed | Copyright © 2020
-
+- title: Yesterday
+  details: 开发一款看着开心、写着顺手的 vuepress 博客主题
+- title: Today
+  details: 希望帮助更多的人花更多的时间在内容创作上，而不是博客搭建上
+- title: Tomorrow
+  details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
 ---

@@ -43,3 +43,4 @@ _book/
 exapp/
 docs/.vuepress/dist
 !.vscode/
+/public
