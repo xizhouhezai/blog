@@ -71,6 +71,20 @@ module.exports = {
         ]
       },
       {
+        "text": "fish_ui",
+        "icon": "reco-other",
+        "items": [
+          {
+            "text": "fish_ui项目搭建",
+            "link": "/fish_ui/build/"
+          },
+          {
+            "text": "fish_ui文档",
+            "link": "/fish_ui/documents/"
+          }
+        ]
+      },
+      {
         "text": "时间轴",
         "link": "/timeline/",
         "icon": "reco-date"
@@ -91,6 +105,14 @@ module.exports = {
       "/notes/talk/": [
         "",
         "论势",
+      ],
+      "/fish_ui/build/": [
+        "",
+        "quick_start"
+      ],
+      "/fish_ui/documents/": [
+        "",
+        "quick_start"
       ]
     },
     "type": "blog",
