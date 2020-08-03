@@ -44,3 +44,5 @@ exapp/
 docs/.vuepress/dist
 !.vscode/
 /public
+
+package-lock.json
