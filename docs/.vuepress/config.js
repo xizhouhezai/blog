@@ -112,7 +112,14 @@ module.exports = {
       ],
       "/fish_ui/documents/": [
         "",
-        "quick_start"
+        "quick_start",
+        {
+          title: '组件',
+          collapsable: true,
+          children: [
+            "components/button.md"
+          ]
+        }
       ]
     },
     "type": "blog",
