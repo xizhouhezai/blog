@@ -1,6 +1,6 @@
 ---
 title: mysql报错：Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggre
-date: 2020-07-17
+date: 2020-09-27
 tags:
  - 报错
 categories: 

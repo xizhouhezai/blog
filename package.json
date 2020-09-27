@@ -4,7 +4,10 @@
   "author": "reco_luan",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "deploy:dev": "deploy-cli-service deploy --mode dev",
+    "deploy:test": "deploy-cli-service deploy --mode test",
+    "deploy:prod": "deploy-cli-service deploy --mode prod"
   },
   "devDependencies": {
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
