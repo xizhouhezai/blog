@@ -46,3 +46,5 @@ docs/.vuepress/dist
 /public
 
 package-lock.json
+
+deploy.config.js
