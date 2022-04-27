@@ -60,16 +60,20 @@ module.exports = {
         "link": "/",
         "icon": "reco-home"
       },
-      {
-        "text": "摘记",
-        "icon": "reco-other",
-        "items": [
-          {
-            "text": "论势",
-            "link": "/notes/talk/"
-          }
-        ]
-      },
+      // {
+      //   "text": "摘记",
+      //   "icon": "reco-other",
+      //   "items": [
+      //     {
+      //       "text": "论势",
+      //       "link": "/notes/talk/"
+      //     },
+      //     {
+      //       "text": "微头条",
+      //       "link": "/notes/weitoutiao/"
+      //     }
+      //   ]
+      // },
       {
         "text": "fish_ui",
         "icon": "reco-other",
@@ -105,6 +109,10 @@ module.exports = {
       "/notes/talk/": [
         "",
         "论势",
+      ],
+      "/notes/weitoutiao/": [
+        "",
+        "20210222",
       ],
       "/fish_ui/build/": [
         "",
