@@ -29,4 +29,5 @@ steps: # 定义管道的执行步骤
 
   volumes:
     - name: deploy_path
-      host: /workspace/blog
+      host: 
+        path: /workspace/blog
