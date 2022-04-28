@@ -6,6 +6,9 @@ volumes: # 声明数据卷
   - name: node_modules # 数据卷名称
     host: # Host Volume
       path: /volumes/drone/volumes/blog/node_modules # 宿主机目录    #绝对路径
+  - name: deploy_path
+    host: 
+      path: /workspace/blog
 
 clone:
   disable: false # 启用代码拉取
@@ -26,8 +29,3 @@ steps: # 定义管道的执行步骤
       - npm run build # 执行编译
       - rm -fr ./blog
       - cp -r ./dist/* ./blog
-
-  volumes:
-    - name: deploy_path
-      host: 
-        path: /workspace/blog
