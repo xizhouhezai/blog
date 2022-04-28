@@ -1,8 +1,32 @@
 kind: pipeline # 定义一个管道
 type: docker # 当前管道的类型
 name: test # 当前管道的名称
+
+volumes: # 声明数据卷
+  - name: node_modules # 数据卷名称
+    host: # Host Volume
+      path: /volumes/drone/volumes/blog/node_modules # 宿主机目录    #绝对路径
+
+clone:
+  disable: false # 启用代码拉取
+
 steps: # 定义管道的执行步骤
-  - name: test # 步骤名称
-    image: node:latest # 当前步骤使用的镜像
+  - name: deploy # 步骤名称
+    image: node:16.13.2 # 当前步骤使用的镜像
+    depends_on: [clone] # 依赖的步骤
+    volumes: # 挂载数据卷
+      - name: node_modules # 数据卷名称
+        path: /drone/src/node_modules # 容器内目录 绝对路径
+      - name: deploy_path
+        path: /drone/src/blog
     commands: # 当前步骤执行的命令
-      - echo 测试drone执行
+      - pwd # 查看当前目录
+      - npm config set registry https://registry.npm.taobao.org # 切换淘宝镜像
+      - npm install # 安装node_modules包
+      - npm run build # 执行编译
+      - rm -fr ./blog
+      - cp -r ./dist/* ./blog
+
+  volumes:
+    - name: deploy_path
+      host: /workspace/blog
